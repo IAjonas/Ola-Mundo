@@ -19,12 +19,6 @@ body{
     display: inline-flex;
 
 }
-.container .estatico{
-    color:#fff;
-    font-size: 60px;
-    font-weight: 400;
-
-}
 .container .dinamico{
     margin-left: 15px;
     line-height: 90px;
@@ -57,7 +51,7 @@ body{
     height: 100%;
     left: 0;
     border-left: 2px solid #a84719;
-    animation: typing 1.5s steps(10) infinite;
+    animation: typing 2s steps(10) infinite;
     background: #111111;
 }
 .dinamico li span{
