@@ -18,7 +18,7 @@ body{
 :root{
 --cor-itens: #69c8ff;
 --cor-fundo: #1b1b1b;
---cor-nav: linear-gradient(to right, #1c3e35, #99f2d1) 1; 
+--cor-nav: linear-gradient(to right, #6d6e7e, #69c8ff) ; 
 --cor-txt: #69c8ff;
 }
 .container{
@@ -103,6 +103,7 @@ height: 70px;
 z-index: 1;
 }
 .nav ul li a{
+
 position: relative;
 display: flex;
 justify-content: center;
@@ -114,6 +115,7 @@ font-weight: 500;
 
 }
 .nav ul li a .icon{
+    
 position: relative;
 display: block;
 
@@ -122,7 +124,7 @@ font-size: 1.5em;
 text-align: center;
 justify-content: center;
 transition: 0.5s;
-color:var(--cor-txt);
+color:var(--cor-fundo);
 
 }
 
@@ -131,7 +133,7 @@ transform: translateY(-32px);
 }
 .nav ul li a .txt{
 position: absolute;
-color: var(--cor-txt);
+color: var(--cor-fundo);
 font-weight: 400;
 font-size: 0.75em;
 letter-spacing: 0.05em;
