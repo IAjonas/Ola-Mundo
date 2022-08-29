@@ -80,7 +80,7 @@ background:var(--cor-nav);
 position: absolute;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items:center;
 border-radius: 10px;
 
 }
