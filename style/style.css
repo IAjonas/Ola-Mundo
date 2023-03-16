@@ -1,10 +1,15 @@
 
 
+@font-face {
+    font-family:'fantasy2' ;
+    src:url('font/final_fantasy2/Final-Fantasy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'fantasy2' ;
 
 }
 body{
@@ -16,29 +21,41 @@ body{
 
 }
 :root{
---cor-itens: #69c8ff;
---cor-fundo: #1b1b1b;
---cor-nav: linear-gradient(to right, #6d6e7e, #69c8ff) ; 
---cor-txt: #69c8ff;
+--cor-itens: linear-gradient(to right, #c9d6ff, #e2e2e2);
+--cor-fundo:linear-gradient(to right, #c9d6ff, #e2e2e2);
+--cor-nav: linear-gradient(to right, #0919fd81, #252691) ; 
+--cor-bordas:#252691;
+--cor-txt: white;
+}
+.bordas{
+    width: 602px;
+    display: flex;
+    height: 103px;
+    background: var(--cor-bordas);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 0px 6px 7px #25269178;
 }
 .container{
     display: inline-flex;
 
 }
 .container .dinamico{
-    margin-left: 15px;
+    margin-left: 10px;
     line-height: 90px;
-    height: 90px;
+    height: 80px;
     overflow: hidden;
 
 
 
 }
 .dinamico li{
+   
     position: relative;
     color: var(--cor-txt);
     list-style: none;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 500;
     left: 0;
     top: 0%;
@@ -54,15 +71,16 @@ body{
     content: "";
     position:absolute;
     width: 100%;
-    height: 100%;
+    height: 115%;
     left: 0;
     border-left: 2px solid var(--cor-itens);
     animation: typing 5s steps(12) infinite;
-    background: var(--cor-fundo);
+    background: #252691;
+    box-shadow: 1px 0px 6px 7px #252691;
 }
 .dinamico li span{
     position: relative;
-
+    
 }
 @keyframes typing{
     100%{
@@ -72,8 +90,8 @@ body{
 
 }
 .nav{
-    
-    bottom: 5px;
+   box-shadow: 0px 4px 10px #252691;
+    bottom: 15px;
     width: 300x;
 height: 70px;
 background:var(--cor-nav);
@@ -133,7 +151,7 @@ transform: translateY(-32px);
 }
 .nav ul li a .txt{
 position: absolute;
-color: var(--cor-fundo);
+color: var(--cor-txt);
 font-weight: 400;
 font-size: 0.75em;
 letter-spacing: 0.05em;
@@ -146,6 +164,10 @@ transform: translateY(20px);
 .nav ul li.active a .txt{
 opacity: 1;
 transform: translateY(10px);
+}
+.hydrated{
+    visibility: inherit;
+    fill: black;
 }
 .indicador{
     top: -50%;
